@@ -1,0 +1,19 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">SHK Polls Administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+<!--
+<h1 id="site-name"><a href="{% url 'admin:index' %}">SHK Polls Administrator</a></h1>
+
+
+#python -c "import django; print(django.__path__)"
+#C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\django
+#copy C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\templates\admin\base_site.html templates\admin\
+#--- 입력                                                                         ------------------------------------------------------------- 입력                                                                                 
+-->
